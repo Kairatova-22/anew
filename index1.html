@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ALFAR INTERIORS — Дизайн интерьера</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap');
+
+  :root {
+    --olive: #8A8F84;
+    --dark: #333333;
+    --light: #fff;
+    --beige: #D6D2CA;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--beige);
+    color: var(--dark);
+    line-height: 1.4;
+  }
+
+  a {
+    color: var(--olive);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: #5e6256;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--olive);
+    color: var(--light);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 1.5px;
+  }
+
+  header a.btn {
+    background: var(--light);
+    color: var(--olive);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
+
+  header a.btn:hover {
+    background: transparent;
+    color: var(--light);
+    border: 2px solid var(--light);
+  }
+
+  main {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .gif-placeholder {
+    flex: 1;
+    background: #ccc;
+    border-radius: 12px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--olive);
+    margin-bottom: 0.8rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--olive);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--dark);
+  }
+
+  blockquote footer {
+    margin-top: 0.3rem;
+    font-weight: 700;
+    color: var(--olive);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+  }
+
+  th, td {
+    padding: 0.6rem 1rem;
+    text-align: left;
+  }
+
+  th {
+    background: var(--olive);
+    color: var(--light);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  td {
+    background: var(--light);
+  }
+
+  form {
+    background: var(--light);
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--olive);
+    font-size: 0.9rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--olive);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  form input:focus {
+    border-color: #5e6256;
+    outline: none;
+  }
+
+  form button {
+    width: 100%;
+    padding: 0.6rem 0;
+    background: var(--olive);
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    color: var(--light);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  form button:hover {
+    background: #5e6256;
+  }
+
+  .phone-contact {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--olive);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+  }
+
+  /* Адаптив для мобильных */
+  @media (max-width: 720px) {
+    main {
+      flex-direction: column;
+    }
+
+    .gif-placeholder {
+      min-height: 180px;
+      margin-top: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ALFAR INTERIORS</h1>
+  <a href="#contact" class="btn">Консультация</a>
+</header>
+
+<main class="container">
+  <div class="content">
+    <h2>Дизайн интерьера под ключ</h2>
+    <ul>
+      <li>Персональный стиль и комфорт</li>
+      <li>Цена — 3000 тенге за 1 кв.м</li>
+      <li>Опытная команда профессионалов</li>
+    </ul>
+
+    <blockquote>
+      «Дизайн — это искусство создавать настроение.»
+      <footer>— Anon</footer>
+    </blockquote>
+
+    <table>
+      <thead>
+        <tr><th>Услуга</th><th>Цена</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Дизайн 1 кв.м</td><td>3000 тенге</td></tr>
+        <tr><td>Полный проект</td><td>По запросу</td></tr>
+      </tbody>
+    </table>
+
+    <form id="contact" action="#" method="post" novalidate>
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 7..." pattern="[\+0-9\s\-]+" required />
+      <button type="submit">Отправить</button>
+    </form>
+    <p class="phone-contact">Или звоните: <a href="tel:+77751931065">+7 775 193 10 65</a></p>
+  </div>
+
+  <div class="gif-placeholder">
+    <!-- сюда вставь свою гифку -->
+    GIF/Видео здесь
+  </div>
+</main>
+
+<footer>
+  © 2025 ALFAR INTERIORS — современный минимализм в интерьере
+</footer>
+
+</body>
+</html>
